@@ -1,0 +1,106 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Assignment</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body >
+
+    <h1>HTML Table Assignment</h1>
+    
+    <p >Create a table with the following specifications:</p>
+    
+    <ul>
+        <li>The table should have a border.</li>
+        <li>Include a caption describing the table.</li>
+        <li>Use <code>colspan</code> to merge two or more columns.</li>
+        <li>Use <code>rowspan</code> to merge two or more rows.</li>
+        <li>Apply different table attributes and tags to style and structure the table.</li>
+    </ul>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Assignment</title>
+    <link href="style.css" rel="stylesheet"></link>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h2 style="font-size: 50px;">Example Table</h2>
+    
+    <table>
+        <caption>Monthly Sales Report</caption>
+        <tr>
+            <th rowspan="2">Month</th>
+            <th colspan="3">Sales Data</th>
+            <th rowspan="2">Total</th>
+        </tr>
+        <tr>
+            <th>Product A</th>
+            <th>Product B</th>
+            <th>Product C</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>100</td>
+            <td>200</td>
+            <td>150</td>
+            <td>450</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>120</td>
+            <td>220</td>
+            <td>180</td>
+            <td>520</td>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td>90</td>
+            <td>160</td>
+            <td>130</td>
+            <td>380</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align: right;">Total Sales:</td>
+            <td>1350</td>
+        </tr>
+    </table>
+
+</body>
+</html>

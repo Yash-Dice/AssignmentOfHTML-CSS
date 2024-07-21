@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table with Pseudo-Classes and Pseudo-Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        th:hover {
+            background-color: #ddd;
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+
+        td:last-child::before {
+            content: "📌 ";
+        }
+
+        tr:hover td::before {
+            content: "→ ";
+        }
+
+        td:nth-child(2n) {
+            background-color: #f0f0f0;
+        }
+
+        td:hover {
+            background-color: #e0e0e0;
+        }
+        
+        /* Styling first and last rows */
+        tr:first-child th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tr:last-child td {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Custom pseudo-element */
+        th::after {
+            content: " ▼";
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Styled Table with Pseudo-Classes and Pseudo-Elements</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apple</td>
+                <td>Fresh red apples</td>
+                <td>$1.00</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>Ripe yellow bananas</td>
+                <td>$0.50</td>
+            </tr>
+            <tr>
+                <td>Cherry</td>
+                <td>Sweet cherries</td>
+                <td>$3.00</td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td>Dry dates</td>
+                <td>$2.50</td>
+            </tr>
+            <tr>
+                <td>Elderberry</td>
+                <td>Fresh elderberries</td>
+                <td>$4.00</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

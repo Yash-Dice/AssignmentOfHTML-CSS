@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <style>
+ 
+div{
+  display: inline;;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+   
+      <div class="green">green</div>
+      <div class="red">red</div>
+      <div class="yellow">yellow</div>
+   
+      </div>
+         
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+Comments
+  
+<head>	Defines information about the document
+<title>	Defines the title of a document
+<base>	Defines a default address or a default target for all links on a page
+<link>	Defines the relationship between a document and an external resource
+<meta>	Defines metadata about an HTML document
+<script>	Defines a client-side script
+<style>	Defines style information for a document
+
+
+Types of tags:
+1. Paired Tags (Opening and Closing Tags) - heading, table, list etc. 
+2. Unpaired Tags (Singular Tag) - br, hr, input
+
+a. Block level - div
+b. inline - span
+
+Structure Tags
+1. Div
+2. span
+
+Formating Tags:
+  Heading 
+  Paragraphh
+  list(ordered , unOrdered and descriptionlist(dl,dt,dd)), nested(correctv and incorrect way)
+    type="1"	The list items will be numbered with numbers (default)
+    type="A"	The list items will be numbered with uppercase letters
+    type="a"	The list items will be numbered with lowercase letters
+    type="I"	The list items will be numbered with uppercase roman numbers
+    type="i"	The list items will be numbered with lowercase roman numbers
+
+    start="50"
+
+  br
+  hr
+  sub
+  sup
+  abbr (title)
+
+img(src, width, height)
+a(href, target)
+
+table(border, colspan, rowspan)
+<table>	Defines a table
+<th>	Defines a header cell in a table
+<tr>	Defines a row in a table
+<td>	Defines a cell in a table
+<caption>	Defines a table caption
+<colgroup>	Specifies a group of one or more columns in a table for formatting
+<col>	Specifies column properties for each column within a <colgroup> element
+<thead>	Groups the header content in a table
+<tbody>	Groups the body content in a table
+<tfoot>	Groups the footer content in a table
+
+
+
+  Form
+
+<input type="text">	Displays a single-line text input field
+<input type="radio">	Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">	Displays a submit button (for submitting the form)
+<input type="button">	Displays a clickable button
+
+label
+
+
+
+CSS
+1. inline 
+2. internal 
+3. external 
+    link tag (rel, href, type)
+
+CSS Cascading
+  * Specificity(id, clas, element)
+  * Inheritance
+  * Order of declaration
+
+
+Different CSS styles
+ background: 
+
+
+ CSS
+  Power of CSS: change, color, font, alignment, positioning, screensize and etc.
+  types of CSS
+    inline
+    internal
+    external
+  comment /* add comment*/
+  Syntex(selector , declaration)
+    selectors simple : tag, id, 
+        class(specific elements with class p.className),
+        universal selector
+        grouping selector(group by comma)
+
+    descendant selector (space)
+    child selector (>)
+    adjacent sibling selector (+)
+    general sibling selector (~)
+
+    Pseudo
+    
+Selector	Example	Example description
+:active	a:active	Selects the active link
+:checked	input:checked	Selects every checked <input> element
+:disabled	input:disabled	Selects every disabled <input> element
+:empty	p:empty	Selects every <p> element that has no children
+:enabled	input:enabled	Selects every enabled <input> element
+:first-child	p:first-child	Selects every <p> elements that is the first child of its parent
+:first-of-type	p:first-of-type	Selects every <p> element that is the first <p> element of its parent
+:focus	input:focus	Selects the <input> element that has focus
+:hover	a:hover	Selects links on mouse over
+:in-range	input:in-range	Selects <input> elements with a value within a specified range
+:invalid	input:invalid	Selects all <input> elements with an invalid value
+:lang(language)	p:lang(it)	Selects every <p> element with a lang attribute value starting with "it"
+:last-child	p:last-child	Selects every <p> elements that is the last child of its parent
+:last-of-type	p:last-of-type	Selects every <p> element that is the last <p> element of its parent
+:link	a:link	Selects all unvisited links
+:not(selector)	:not(p)	Selects every element that is not a <p> element
+:nth-child(n)	p:nth-child(2)	Selects every <p> element that is the second child of its parent
+:nth-last-child(n)	p:nth-last-child(2)	Selects every <p> element that is the second child of its parent, counting from the last child
+:nth-last-of-type(n)	p:nth-last-of-type(2)	Selects every <p> element that is the second <p> element of its parent, counting from the last child
+:nth-of-type(n)	p:nth-of-type(2)	Selects every <p> element that is the second <p> element of its parent
+:only-of-type	p:only-of-type	Selects every <p> element that is the only <p> element of its parent
+:only-child	p:only-child	Selects every <p> element that is the only child of its parent
+:optional	input:optional	Selects <input> elements with no "required" attribute
+:out-of-range	input:out-of-range	Selects <input> elements with a value outside a specified range
+:read-only	input:read-only	Selects <input> elements with a "readonly" attribute specified
+:read-write	input:read-write	Selects <input> elements with no "readonly" attribute
+:required	input:required	Selects <input> elements with a "required" attribute specified
+:root	root	Selects the document's root element
+:target	#news:target	Selects the current active #news element (clicked on a URL containing that anchor name)
+:valid	input:valid	Selects all <input> elements with a valid value
+:visited	a:visited	Selects all visited links
+
+
+    Attribute selector
+      a[target="_blank"]
+
+
+  color: RGB, Hex(rrggbb), HSL() 
+    properties: color(text), background color, border color
+  
+    background-color , opacity
+    background-image   url(path)
+    background-repeat (no-repeat, )
+    background-attachment (fixed scroll)
+    background-position  (3*3 left top, x% y%)
+    background (shorthand property color, image , repeat position)
+
+    border px, solid, color
+
+    margin, padding , 
+
+
+    Fonts
+      Family
+        serif - Fonts have small edges
+        sense-serif - clear strokes no edges
+        Monospace - same width , mechanical look
+        cursive - human like
+        fantasy - playful
+      font-family: 1,2,3; order if not found, keep generic at end
+      font-style: normal, italic, oblique
+      font-wight: bold, normal
+      font-variant: small-caps, normal
+      font-size: all relative values are relative to parent (em, ex, smaller , larger)
+      different fonts can be used using link CDNs
+    
+    Icons
+      fontawesom use script tag: <i class="fa-solid fa-shield-halved"></i>
+
+    Emojis
+      part of char set UTF-8, can use &#128516
+
+    position
+      left,rigth, top, bottom, z-index
+      static - no impact
+      relative - relative to itself
+      absolute - relative to closest ancestor
+      fixed - relative to html, no impact of scroll
+      sticky- relative + fix
+
+      .main-element {
+            position: static;
+            left: 10px;
+            bottom: 10px;
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        .sibling-element {
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+        <div class="parent-element">
+            <div class="sibling-element">
+                I'm the other sibling element.
+            </div>
+            
+            <div class="main-element">
+                All eyes on me. I am the main element.
+            </div>
+            
+            <div class="sibling-element">
+                I'm the other sibling element.
+            </div>
+        </div>
+    Float
+    left, right, none
+
+    Nav bars - list-style-type: none; text decoration none;
+    drop downs  -hover should have display block and position absolute
+    fonts - sizeing em, rem
+    icons -fontawesom
+    emojis  utf 8 #&code
+    
+    The transition effect will start when the specified CSS property (width) changes value.
+    
+    transition: width 2s; -- property you want to change and delay width 2s, height 4s;
+    transition-property
+    transition-duration
+    transition-timing-function
+    transition-delay
+
+    float - left right none, 
+    clear - 
+    
+    flex-box - two axis main and cross axis(perpendicular to direction)
+    flex container
+      display - flex
+      flex-direction: row/column reverse as well
+      flex-wrap: 
+      justify-content:  main axis
+      align-items: cross axis
+    
+    flex items
+      flex: 200px --for flex items // flex-grow, flex-srink, flex-basis
+        flex: proportion min-size /// flex: 2 200px;
+        order
+
+
+-->

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Position Properties Assignment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 2000px; /* To enable scrolling */
+    }
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+      color: #333;
+    }
+    .box {
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+      width:100px;
+    }
+    .top-left {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #ff5722;
+    }
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-color: #4caf50;
+    }
+    .bottom-left {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background-color: #2196f3;
+    }
+    .right-center {
+      position: sticky;
+      top: 50%;
+      left: 100%;
+      background-color: #9c27b0;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Position Properties Example</h1>
+
+  <div class="box top-left">
+    <p>Top Left Box</p>
+  </div>
+
+  <div class="box center">
+    <p>Center Box</p>
+  </div>
+
+  <div class="box bottom-left">
+    <p>Bottom Left Box</p>
+  </div>
+
+  <div class="box right-center">
+    <p>Right Center Box</p>
+  </div>
+</body>
+</html>
